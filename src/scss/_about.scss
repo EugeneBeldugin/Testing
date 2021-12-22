@@ -1,0 +1,38 @@
+.about {
+   width: 320px;
+   margin: 99px auto;
+
+   &__title {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 78px;
+      letter-spacing: 0.68px;
+      color: #3D3D3D;
+   }
+
+   &__text {
+      font-size: 20px;
+      font-weight: 200;
+      letter-spacing: 0.4px;
+      color: #3D3D3D;
+   }
+}
+
+@media (min-width: 480px) {
+   .about {
+      width: 400px;
+   }
+}
+
+@media (min-width: 1300px) {
+   .about {
+      width: 1200px;
+   }
+}
+
+@media (min-width: 1900px) {
+   .about {
+      width: 1336px;
+   }
+}
+

@@ -1,0 +1,123 @@
+.popup-background {
+   position: absolute;
+   z-index: 1;
+   background-color: #272829BC;
+   height: calc(100vh - 160.45px);
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.popup {
+   position: relative;
+   padding: 28px;
+   min-width: 320px;
+   // height: 140px;
+   background-color: #FBFBFB;
+   // @include flex-spase-between;
+
+   &__title {
+      font-size: 20px;
+      color: #A2A2A2;
+      font-weight: 500;
+      letter-spacing: -0.4px;
+      margin: 8px 0;
+   }
+
+   &__input {
+      min-width: 220px;
+      padding: 14px 0 13px 20px;
+      border: solid 2px $main-color;
+      color: #3D3D3D;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.66px;
+   }
+
+   &__close-btn {
+      position: absolute;
+      background-color: $main-color;
+      top: 0;
+      right: 0;
+      padding: 1px 8px;
+      font-size: 25px;
+      color: #3D3D3D;
+      border: none;
+      cursor: pointer;
+   }
+}
+
+@media (min-width: 992px) {
+   .popup-background {
+      height: calc(100vh - 108.97px);
+   }
+
+   .popup {
+      position: relative;
+      padding: 28px;
+      min-width: 510px;
+      height: 140px;
+      background-color: #FBFBFB;
+      @include flex-spase-between;
+   }
+}
+
+@media (min-width: 1900px) {
+   .popup-background {
+      height: calc(100vh - 175.45px);
+   }
+}
+
+
+
+
+// .popup-background {
+//    position: absolute;
+//    z-index: 1;
+//    background-color: #272829BC;
+//    height: 100%;
+//    width: 100%;
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+// }
+
+// .popup {
+//    position: relative;
+//    padding: 28px;
+//    min-width: 510px;
+//    height: 140px;
+//    background-color: #FBFBFB;
+//    @include flex-spase-between;
+
+//    &__title {
+//       font-size: 20px;
+//       color: #A2A2A2;
+//       font-weight: 500;
+//       letter-spacing: -0.4px;
+//       margin: 8px 0;
+//    }
+
+//    &__input {
+//       min-width: 220px;
+//       padding: 14px 0 13px 20px;
+//       border: solid 2px $main-color;
+//       color: #3D3D3D;
+//       font-size: 22px;
+//       font-weight: 500;
+//       letter-spacing: 0.66px;
+//    }
+
+//    &__close-btn {
+//       position: absolute;
+//       background-color: $main-color;
+//       top: 0;
+//       right: 0;
+//       padding: 1px 8px;
+//       font-size: 25px;
+//       color: #3D3D3D;
+//       border: none;
+//       cursor: pointer;
+//    }
+// }

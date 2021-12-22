@@ -1,0 +1,101 @@
+.home {
+   position: relative;
+   background-image: url(../../public/img/background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100vw;
+   height: calc(100vh - 160.45px);
+
+   &__text-wrapper {
+      padding-top: 30px;
+      margin-right: 10px;
+   }
+
+   &__title {
+      margin-bottom: 44px;
+      font-size: 40px;
+      color: $main-color;
+      text-align: end;
+      letter-spacing: 3.5px;
+   }
+
+   &__subtitle {
+      font-size: 25px;
+      color: $additional-color;
+      text-align: end;
+      letter-spacing: 0.6px;
+      font-weight: 300;
+      margin-bottom: 44px;
+   }
+
+   &__calendar-wrapper {
+      width: 100%;
+      min-height: 500px;
+      background-color: #272829;
+      display: flex;
+      justify-content: center;
+      padding-top: 44px;
+      color: $additional-color;
+   }
+}
+
+@media (min-width: 480px) {
+   .home {
+      &__text-wrapper {
+         padding-top: 44px;
+      }
+   }
+}
+
+@media (min-width: 992px) {
+   .home {
+      height: calc(100vh - 108.97px);
+      display: flex;
+      justify-content: end;
+   
+      &__calendar-wrapper {
+         width: 380px;
+         height: 100%;
+      }
+   }
+}
+
+@media (min-width: 1300px) {
+   .home {
+      &__text-wrapper {
+         padding-top: 80px;
+         margin-right: 20px;
+      }
+   
+      &__calendar-wrapper {
+         width: 500px;
+         height: 100%;
+         padding-top: 80px;
+      }
+   }
+}
+
+@media (min-width: 1900px) {
+   .home {
+      height: calc(100vh - 175.45px);
+
+      &__text-wrapper {
+         padding-top: 194px;
+         margin-right: 33px;
+      }
+
+      &__title {
+         font-size: 50px;
+      }
+
+      &__subtitle {
+         font-size: 30px;
+      }
+   
+      &__calendar-wrapper {
+         width: 695px;
+         height: 100%;
+         padding-top: 175px;
+      }
+   }
+}
